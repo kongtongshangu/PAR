@@ -42,8 +42,11 @@ python data_process/make_c_video.py --corruption gaussian_noise --severity 5 --d
 
 
 ## Run Test-Time Adaptation
-Example: Kinetics50-MC, both modalities corrupted
-CUDA_VISIBLE_DEVICES=0 python run.py --dataset ks50 --tta-method OURS --pretrain_path ./pretrained/cav_mae_ks50.pth --corruption-modality both --audio_c_type crowd
+Example: CIFAR-10C
+```bash
+cd bash
+bash ours.sh
+```
 
 ## Acknowledgement
 - SPACE code is heavily used. [official](https://github.com/ethanxyluo/SPACE)
