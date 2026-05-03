@@ -11,6 +11,7 @@ Spiking Neural Networks (SNNs) offer compelling advantages in energy efficiency 
 ---
 
 > 🔥 Tunable modules: THP + PHSA
+
 > ❄️ Frozen modules: backbone
 
 ---
