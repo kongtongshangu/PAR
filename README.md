@@ -31,11 +31,12 @@ We recommend the following environment (you may adjust based on your setup):
 
 ### Prepare Data
 
-We follow the multi-modal corruption protocol used in prior MM-TTA works (15 video corruptions × 6 audio corruptions = 90 combinations).
-
 ```bash
-# Video corruptions
-python data_process/make_c_video.py --corruption gaussian_noise --severity 5 --data-path /path/to/video_val
+mkdir -p ./data
+cd ./data
+wget -O CIFAR-10-C.tar [https://zenodo.org/record/2535967/files/CIFAR-10-C.tar](https://zenodo.org/record/2535967/files/CIFAR-10-C.tar)
+tar -xvf CIFAR-10-C.tar
+cd ..
 ```
 
 ### Prepare Pre-trained Models
@@ -44,7 +45,7 @@ python data_process/make_c_video.py --corruption gaussian_noise --severity 5 --d
 ## Run Test-Time Adaptation
 Example: CIFAR-10C
 ```bash
-cd bash
+cd cifar10/bash
 bash ours.sh
 ```
 
