@@ -1,0 +1,1 @@
+python main.py --log_dir "/path/to/your/log_dir" --method None --domain CIFAR-10-C --data_root "/path/to/your/cifar10c_data"
