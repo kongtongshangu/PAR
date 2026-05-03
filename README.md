@@ -41,6 +41,13 @@ cd ..
 
 ### Prepare Pre-trained Models
 
+The pre-trained models are already provided in the `./ckpt/` directory. You can use them directly for evaluation or fine-tuning without needing to download them separately. 
+The directory structure should look like this:
+
+```text
+ckpt/
+├── cifar10vgg9_timestep25_lr0.3_epoch100_leak0.95_bestmodel.pth.tar
+```
 
 ## Run Test-Time Adaptation
 Example: CIFAR-10C
